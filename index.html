@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie-edge">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		
+		<!-- Estilos, solo para ver la rejilla -->
+		<style type="text/css">
+			
+			.borde{
+				background-color: gray;
+				height: 200px;
+			}
+			.borde1{
+				background-color: aquamarine;
+				height: 50px;
+				text-align: center;
+			}
+			.borde2{
+				background-color: olivedrab;
+				height: 50px;
+				text-align: center;
+			}
+			.borde3{
+				background-color: orangered;
+				height: 50px;
+				text-align: center;
+			}
+
+		</style>
+
+		<title>Proyecto</title>
+	</head>
+	<body>
+		<!-- CONTENIDO -->
+		<h1>Hello, world!</h1>
+		<!-- DECLARAMOS UN CONTENEDOR (fluid para que ocupe todo el ancho de la pantalla) -->
+		<div class="container-fluid borde">
+			<h3>DISPOSICIÓN Y REJILLA</h3>
+			<!-- DECLARAMOS UNA FILA -->
+			
+			<div class="row">
+				<div class="col">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente velit praesentium consequuntur harum maiores et error animi. Atque, iste dignissimos minima, officia voluptatem tempore, consequuntur sint earum neque molestiae rerum.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- DECLARAMOS COLUMNA. Cada tamaño sm,md,...tiene una disposición en la cuadrícula (max 12)-->
+				<div class="col-12 col-sm-12  col-md-8  col-lg-3 col-xl-2 borde2"> 	<p>Uno</p>		</div>
+				<div class="col-12 col-sm-12  col-md-4  col-lg-6 col-xl-8 borde1">	<p>Dos</p>		</div>
+				<div class="col-12 col-sm-12  col-md-12 col-lg-3 col-xl-2 borde3">	<p>Tres</p>		</div>
+			</div>
+
+			<div class="row">
+				<!-- DECLARAMOS COLUMNA. border te genera un borde (propio de bootstrap) -->
+				<div class="col-12 col-sm-6  col-md-8  col-lg-3 col-xl-8 border"> 	<p>Cuatro</p>	</div>
+				<div class="col-12 col-sm-6  col-md-4  col-lg-3 col-xl-2 border">	<p>Cinco</p>	</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 border">	<p>Seis</p>		</div>
+			</div>
+		</div>
+		<!-- DECLARAMOS UN CONTENEDOR (sin fluid) -->
+		<div class="container">
+			<!-- DECLARAMOS UNA FILA -->
+			
+			<div class="row">
+				<div class="col">
+					<h3>CABECERA. OCULTACIÓN</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente velit praesentium consequuntur harum maiores et error animi. Atque, iste dignissimos minima, officia voluptatem tempore, consequuntur sint earum neque molestiae rerum.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- DECLARAMOS COLUMNA. d-xs-none y d-sm-none oculta en esas resoluciones -->
+				<div class="col-12 col-sm-6  col-md-8  col-lg-3 col-xl-8 d-none d-lg-block borde2"> 	<p>Uno</p>		</div>
+				<div class="col-12 col-sm-6  col-md-4  col-lg-3 col-xl-2 					 borde1">	<p>Dos</p>		</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 d-none borde3">	<p>Tres</p>		</div>
+			</div>
+
+			<div class="row">
+				<!-- DECLARAMOS COLUMNA. border te genera un borde (propio de bootstrap) -->
+				<div class="col-12 col-sm-6  col-md-8  col-lg-3 col-xl-8 border"> 	<p>Cuatro</p>	</div>
+				<div class="col-12 col-sm-6  col-md-4  col-lg-3 col-xl-2 border">	<p>Cinco</p>	</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-2 border">	<p>Seis</p>		</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<h3>PIE DE FOTO</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente velit praesentium consequuntur harum maiores et error animi. Atque, iste dignissimos minima, officia voluptatem tempore, consequuntur sint earum neque molestiae rerum.</p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- ALINEACIÓN -->
+
+		<div class="container">
+			<h3>ALINEACIÓN</h3>
+			<div class="row">
+				<div class="col border">
+					<div class="clearfix">
+						<span class="float-left">IZQUIERDA</span>
+						<span class="float-right">DERECHA</span>
+					</div>
+				</div>
+				<div class="col border">
+					<div>
+						<span class="float-left">IZQUIERDA</span>
+						<span class="float-right">DERECHA</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<h3>ALINACIÓN MOBILE FIRST</h3>
+			<div class="row d-block">
+				<div class="float-sm-right">UNO</div> <br>
+				<div class="float-md-right">DOS</div> <br>
+				<div class="float-lg-right">TRES</div> <br>
+				<div class="float-xl-right">CUATRO</div> <br>
+				<div class="float-none">CINCO</div> <br>
+				<div class="mx-auto" style="text-align: center;">CENTRO</div> <br>
+			</div>
+		</div>
+		<!-- CENTRADO CON: justify-content-center, justify-content-end, start, between (misma distancia horizontal sin espacio en los bordes), around (misma distancia horizontal con espacio en los bordes)... -->
+		<div class="container borde" style="height: 100px;">
+			<h3>ALINACIÓN HORIZONTAL</h3>
+			<div class="row justify-content-center borde1">
+				<div class="col-4 borde2">
+					<p>UNO</p>
+				</div>
+				<div class="col-4 borde3">
+					<p>DOS</p>
+				</div>		
+			</div>
+		</div>
+
+		<!-- Espacio en blanco -->
+		<div class="container" style="height: 100px;"></div>
+		<!-- CENTRADO CON: align-items-center, align-items-end, start, between (misma distancia horizontal sin espacio en los bordes), around (misma distancia horizontal con espacio en los bordes)... -->
+		<div class="container borde" style="height: 200px;">
+			<h3>ALINACIÓN VERTICAL</h3>
+			<div class="row align-items-center borde1" style="height: 100px;">
+				<div class="col-4 borde2">
+					<p>UNO</p>
+				</div>
+				<div class="col-4 borde3 align-self-end">
+					<p>DOS</p>
+				</div>		
+			</div>
+		</div>
+
+		<!-- Espacio en blanco -->
+		<div class="container" style="height: 100px;"></div>
+		<!-- CONTENIDO FIJADO CON: fixed-top y fixed-bottom -->
+		<div class="container">
+			<div class="row">
+				<div class="col-12 borde2 fixed-top">
+					<p>FIJADO ARRIBA</p>
+				</div>
+				<div class="col-12 borde3 fixed-bottom">
+					<p>FIJADO ABAJO</p>
+				</div>		
+			</div>
+		</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery-3.3.1.slim.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
