@@ -1,5 +1,9 @@
 Comandos para GIT BASH
 
+IGNORAR ARCHIVOS
+
+Crear archivo .gitignore y añadir el nombre y extensión de los archivos a ignorar. (debes tener en cuenta que jamás antes debiste hacer commit de los archivos a ignorar) (No trackear todo, incluir en .gitignore librerías y archivos de config que no cambian)
+
 CREAR ALIAS PARA LOS COMANDOS (Ej: renombra el comando log)
 
 git config --global alias.l "log" (alias.algo renombra el comando con la palabra "algo")
@@ -83,7 +87,8 @@ git reflog
 RESETEAR Y RESTAURAR EL DIRECTORIO AL ÚLTIMO ESTADO COMPROMETIDO
 
 git reset --hard HEAD (--hard Recupera los archivos y vuelve al punto indicado)
-git reset --soft HEAD (--soft Vuelve al punto indicado, pero no recupera los archivos)
+git reset --soft [commit] (--soft Vuelve al stage indicado, pero no recupera los archivos. Igual que --mixed + un git add)
+git reset --mixed HEAD (--mixed Viene por defecto. Igual que soft pero no añade los cambios para comitear)
 
 BORRAR ARCHIVOS DEL DIRECTORIO DONDE ESTÁS TRABAJANDO
 
