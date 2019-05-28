@@ -38,25 +38,28 @@ git status
 git push
 Este es uno de los comandos más básicos. Un simple push envía los cambios que se han hecho en la rama principal de los repertorios remotos que están asociados con el directorio que está trabajando. Por ejemplo:
 git push  origin master
-git checkout
-El comando checkout se puede usar para crear ramas o cambiar entre ellas. Por ejemplo, el siguiente comando crea una nueva y se cambia a ella:
-command git checkout -b <banch-name>
-Para cambiar de una rama a otra solo usa:
 
-git checkout <branch-name>
+CREAR RAMAS Y CAMBIAR ENTRE ELLAS
+
+git checkout -b <banch-name> 	(Crea una rama y cambia el HEAD a esa rama)
+git checkout <branch-name>		(Solo cambia de rama HEAD)
+
 git remote
 El comando git se usa para conectar a un repositorio remoto. El siguiente comando muestra los repositorios remotos que están configurados actualmente:
 git remote -v
 Este comando te permite conectar al usuario con el repositorio local a un servidor remoto:
 
 git remote add origin <93.188.160.58>
-git branch
-Este comando se usa para listar, crear o borrar ramas. Para listar todas las ramas se usa:
+
+
+LISTA, CREAR O BORRAR RAMAS. Para listar todas las ramas se usa:
 git branch
 
 para borrar la rama:
 
 git branch -d <branch-name>
+
+
 git pull
 Para poder fusionar todos los cambios que se han hecho en el repositorio local trabajando, el comando que se usa es:
 git pull
@@ -79,6 +82,8 @@ git tag 1.1.0 <instert-commitID-here>
 LOG DE COMMITS
 
 git log
+
+git log --oneline --decorate --all --graph (modifican la forma de ver el log)
 
 LOG HISTORICO DE COMMITS (INCLUYE COMMITS BORRADOS)
 
