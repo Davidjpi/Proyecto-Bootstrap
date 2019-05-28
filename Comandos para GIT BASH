@@ -15,7 +15,7 @@ git config --global user.email sam@google.com
 
 NUEVO REPOSITORIO
 
-git init
+git init (Hay que colocarse a la altura del directorio a controlar)
 
 AGREGAR ARCHIVOS AL INDEX
 
@@ -69,6 +69,7 @@ UNION DE UNA RAMA SECUNDARIA CON MASTER
 git merge <branch-name> (Desde la rama master)
 
 fast-forward (merge entre la rama principal y una secundaria. La rama secundaria no interfiera con el contenido de la rama master)
+Si existen conflictos entre la rama master y la rama secundaria se deben resolver a mano y commitear
 
 git diff
 Este comando se usa para hacer una lista de conflictos. Para poder ver conflictos con el archivo base usa:
@@ -77,11 +78,14 @@ El siguiente comando se usa para ver los conflictos que hay entre ramas que est√
 
 git diff <source-branch> <target-branch>
 Para solo ver una lista de todos los conflictos presentes usa:
-
 git diff
-git tag
+
+
+ETIQUETAR COMMITS MEDIANTE SU ID Y AGREGAR UN MENSAJE
 Etiquetar se usa para marcar commits espec√≠ficos con asas simples. Por ejemplo:
-git tag 1.1.0 <instert-commitID-here>
+git tag -a v1.1.0 <instert-commitID-here> -m <mensaje>
+git tag -d <nombre tag>
+
 
 LOG DE COMMITS
 
