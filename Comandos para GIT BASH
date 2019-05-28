@@ -64,9 +64,11 @@ git pull
 Para poder fusionar todos los cambios que se han hecho en el repositorio local trabajando, el comando que se usa es:
 git pull
 
-git merge
-Este comando se usa para fusionar una rama con otra rama activa:
-git merge <branch-name>
+UNION DE UNA RAMA SECUNDARIA CON MASTER
+
+git merge <branch-name> (Desde la rama master)
+
+fast-forward (merge entre la rama principal y una secundaria. La rama secundaria no interfiera con el contenido de la rama master)
 
 git diff
 Este comando se usa para hacer una lista de conflictos. Para poder ver conflictos con el archivo base usa:
